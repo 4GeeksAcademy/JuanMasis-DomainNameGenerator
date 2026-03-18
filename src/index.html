@@ -1,35 +1,39 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+    <title>Domain Name Generator</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
+  <body class="bg-light">
+    <div class="container text-center mt-5">
+      <h1 class="mb-4 text-primary">🌐 Domain Name Generator</h1>
+
+      <input
+        id="input-base"
+        type="text"
+        class="form-control w-50 mx-auto mb-3"
+        placeholder="Write a name (example: hola.com)"
+      />
+
+      <button id="btn-generate" class="btn btn-primary mb-4">
+        Generate Domains
+      </button>
+
+      <pre
+        id="output"
+        class="bg-white p-3 rounded border w-50 mx-auto text-start"
+        style="min-height: 200px;"
+      ></pre>
       <div class="fixed-bottom p-4">
         Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+        <a href="Juan Masis G.">Juan Masis G.</a>
       </div>
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
   </body>
 </html>
