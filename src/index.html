@@ -8,30 +8,44 @@
     <title>Domain Name Generator</title>
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body class="bg-light">
+
+    <img src="assets/img/image.png" alt="Domain Generator">
+
     <div class="container text-center mt-5">
+
       <h1 class="mb-4 text-primary">🌐 Domain Name Generator</h1>
 
+      <!-- INPUT -->
       <input
         id="input-base"
         type="text"
         class="form-control w-50 mx-auto mb-3"
-        placeholder="Write a name (example: hola.com)"
+        placeholder="Write a domain name here (This is an example: hola or thegreatracoon)"
       />
 
-      <button id="btn-generate" class="btn btn-primary mb-4">
+      <!-- BOTONES -->
+      <button id="btn-generate" class="btn btn-primary mb-3">
         Generate Domains
       </button>
 
+      <button id="btn-clear" class="btn btn-secondary mb-3 ms-2">
+        Clear
+      </button>
+
+      <!-- RESULTADO -->
       <pre
         id="output"
         class="bg-white p-3 rounded border w-50 mx-auto text-start"
         style="min-height: 200px;"
       ></pre>
+
       <div class="fixed-bottom p-4">
         Made with ❤️ by
-        <a href="Juan Masis G.">Juan Masis G.</a>
+        <a href="#">Juan Masis G.</a>
       </div>
+
     </div>
 
     <script type="module" src="/app.js"></script>
